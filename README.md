@@ -32,9 +32,9 @@ generate.py
 - cd mt-exercise-02
 - ./scripts/make_virtualenv.sh
 - source venvs/torch3/bin/activate./scripts/install_packages.sh # I added pandas and matplotlib
-- make sure that you use the MODIFIED «main.py» and «generate.py» in \tools\pytorch-examples\word_language_model\ provided in my repository on Github (they might get overwritten when executing install_packages.sh)
+- make sure that you use the MODIFIED «main.py» and «generate.py» that are directly in the TOP DIRECTORY (mt-exercise-02) and REPLACE the ones in \tools\pytorch-examples\word_language_model\. (I did not quite see an elegant solution there, as the pytorch_examples folder is somehow linked to another branch and I didn't dare to change the paths, which could potentially mess up the scripts after having conducted my experiments.)
 - ./scripts/download_data.sh
-- make sure the directories «logs» and «models» as direct subfolders of «mt-exercise-02» exist and are empty as not to run into an error when saving the models. 
+- make sure the directories «logs» and «models» as direct subfolders of «mt-exercise-02» exist and are EMPTY as not to run into an error when saving the models. 
 - ./scripts/train.sh
 - ./scripts/visualize.py
 - (./scripts/generate.sh (change model name if want a specific one))
